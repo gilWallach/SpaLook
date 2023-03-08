@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/SpaLook/static/css/main.2f751412.css",
-    "main.js": "/SpaLook/static/js/main.8a70a659.js",
+    "main.js": "/SpaLook/static/js/main.3b86a13b.js",
     "static/js/210.ae4039c9.chunk.js": "/SpaLook/static/js/210.ae4039c9.chunk.js",
     "static/js/97.c738929f.chunk.js": "/SpaLook/static/js/97.c738929f.chunk.js",
     "static/js/94.2013f4eb.chunk.js": "/SpaLook/static/js/94.2013f4eb.chunk.js",
@@ -67,11 +67,11 @@
     "static/media/ArrowDown.svg": "/SpaLook/static/media/ArrowDown.463d3e95bdda367786e7.svg",
     "static/media/Hamburger.svg": "/SpaLook/static/media/Hamburger.3edfbe19e81f239f60e7.svg",
     "main.2f751412.css.map": "/SpaLook/static/css/main.2f751412.css.map",
-    "main.8a70a659.js.map": "/SpaLook/static/js/main.8a70a659.js.map",
+    "main.3b86a13b.js.map": "/SpaLook/static/js/main.3b86a13b.js.map",
     "787.e80ac769.chunk.js.map": "/SpaLook/static/js/787.e80ac769.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2f751412.css",
-    "static/js/main.8a70a659.js"
+    "static/js/main.3b86a13b.js"
   ]
 }

@@ -1,0 +1,67 @@
+.admin {
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    ul {
+      li {
+        background-color: $clr6;
+        color: $clr5;
+        padding-block: em(8px);
+        &:has(a.active) {
+          background-color: $clr1;
+          color: $clr8;
+          border-radius: em(3px);
+          &:first-of-type {
+            border-radius: 0 em(3px) em(3px) 0;
+          }
+          &:last-of-type {
+            border-radius: em(3px) 0 0 em(3px);
+          }
+        }
+        a {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &:hover:not(.active) {
+            // text-decoration: underline;
+            opacity: .8;
+            color: $clr3;
+          }
+          &:hover.active {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  .opening-hours-wrapper {
+    h3{
+      margin-bottom: em(8px);
+    }
+    div.flex {
+      margin-bottom: em(8px);
+      span {
+        padding: em(16px) em(14px) em(16px) 0;
+      }
+
+      .react-timerange-picker__wrapper {
+        margin-bottom: em(8px);
+        padding-inline: em(8px);
+        border: 1px solid #00000033;
+        border-radius: $border-radius;
+      }
+    }
+  }
+  
+  .css-sghohy-MuiButtonBase-root-MuiButton-root {
+    background-color: $clr1;
+  }
+  .css-1rwt2y5-MuiButtonBase-root-MuiButton-root,
+  .css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+    color: $clr1;
+    border-color: $clr1;
+  }
+}

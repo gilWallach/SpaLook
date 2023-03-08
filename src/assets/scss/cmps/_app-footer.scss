@@ -1,0 +1,53 @@
+.main-footer {
+  background-color: $clr4;
+  color: $clr8;
+  padding: em(23px) em(11px);
+  .logo {
+    width: em(27px);
+    height: em(27px);
+  }
+
+  button {
+    background-color: transparent;
+    border: 0;
+    color: $clr8;
+  }
+
+  .main-content {
+    font-size: rem(14px);
+    padding-block: em(20px,14px);
+    > * {
+      padding-block-end: em(18px,14px);
+    }
+  }
+
+  .support {
+    gap: em(24px);
+    padding-block-end: em(20px);
+    button{
+        font-size: em(12px);
+    }
+    .lang {
+      svg {
+        fill: $clr8;
+        width: em(14.57px);
+      }
+    }
+  }
+
+  .statements {
+    padding-block-end: em(20px);
+    gap: em(20px);
+    > * {
+      font-size: rem(10px);
+      padding: 0;
+    }
+  }
+
+  .copyrights {
+    small::before {
+      content: "©";
+      padding-inline-end: em(4px);
+    }
+  }
+}

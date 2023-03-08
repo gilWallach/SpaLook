@@ -1,0 +1,33 @@
+.slick-slider {
+  .carousel-content {
+    // margin: auto;
+  }
+  .slick-slide {
+    // width: fit-content !important;
+    // padding-inline-end: em(40px);
+  }
+
+  .slick-list{
+    overflow: visible;
+  }
+
+  .slick-track{
+    display: flex;
+    margin: 0;
+  }
+
+  button.slick-arrow {
+    z-index: 1 !important;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    color: $clr1 !important;
+  }
+  button.slick-next {
+    right: 0 !important;
+  }
+  button.slick-prev {
+    left: 0 !important;
+  }
+}

@@ -1,0 +1,140 @@
+.main-header {
+  position: relative;
+  padding: em(22px) 0 em(16px);
+  .top-btns {
+    .burger-btn,
+    .lang-btn,
+    .spa-btn {
+      position: relative;
+      border: none;
+      background-color: transparent;
+      border-radius: rem(8px);
+      padding: rem(4px);
+      width: em(27px);
+      height: em(27px);
+      fill: $clr8;
+      cursor: pointer;
+    }
+    .lang-btn {
+      background-color: $clr8;
+    }
+    .spa-btn {
+      background-color: $clr8;
+      margin-inline-start: em(8px);
+    }
+  }
+
+  .header-title {
+    margin-top: em(35px);
+  }
+  .header-btns-container {
+    margin-top: em(18px);
+    gap: em(10px);
+    button {
+      border: 0;
+      background-color: $clr8;
+      border-radius: em(3px, 13.33px);
+      &:not(:first-of-type) {
+        box-shadow: $bx-shadow1;
+      }
+      &:nth-of-type(2) {
+        gap: em(10px, 13.33px);
+        .search-svg-container {
+          height: 100%;
+        }
+        padding: em(6px, 13.33px) em(12px, 13.33px);
+        color: $clr5;
+        h4 {
+          font-size: rem(12px);
+          margin: 0 0 em(2px);
+        }
+        span {
+          color: transparentize($color: $clr5, $amount: 0.4);
+
+          &:not(:first-of-type) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &::before {
+              content: "";
+              display: inline-block;
+              background-color: transparentize($color: $clr5, $amount: 0.4);
+              width: em(2px);
+              height: em(2px);
+              margin-inline-end: em(7px);
+              border-radius: 50%;
+              // position: relative;
+            }
+          }
+          font-size: rem(10px);
+          padding-inline-end: em(7px);
+        }
+        svg {
+          fill: $clr6;
+        }
+      }
+      &:last-of-type {
+        padding: em(10px, 13.33px);
+        svg {
+          width: em(21.2px, 13.33px);
+          height: em(21.34px, 13.33px);
+        }
+      }
+    }
+    .back-btn {
+      display: none;
+    }
+  }
+}
+
+
+header.App-header:has(~ .spa-details) {
+  display: none;
+}
+
+header.App-header:has(~ .homepage), header.App-header:has(~ .admin), header.App-header:has(~ .sign-in) {
+  background-image: url("../../imgs/homepage-hero.png");
+  background-size: cover;
+  background-position: center;
+  color: $clr8;
+
+  .filter {
+    div {
+      background-color: $clr8;
+    }
+  }
+}
+
+
+header.App-header:has(~ .search) {
+  background-color: $clr1;
+  color: $clr8;
+
+  .top-btns,
+  .header-title {
+    display: none;
+  }
+  .header-btns-container {
+    margin: 0;
+
+    button.back-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: em(8px);
+      color: $clr8;
+      background-color: transparent;
+
+      svg{
+        fill: $clr8;
+      }
+    }
+  }
+}
+
+header.App-header:has(~ .admin) {
+  background: $clr1;
+  .header-btns-container, .header-title{
+    display: none;
+  }
+}

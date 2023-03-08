@@ -1,0 +1,97 @@
+.spa-details-about {
+  > * {
+    padding: em(10px);
+    background-color: $clr8;
+    margin-block: em(15px);
+    border-radius: em(8px);
+  }
+  h2 {
+    font-size: rem(18px);
+    margin-top: 0;
+    font-family: Inter-Bold;
+    color: $clr3;
+  }
+  .description {
+    color: $clr5;
+    font-size: rem(15px);
+    line-height: rem(20px);
+    button {
+      background-color: $clr8;
+      border: 0;
+      padding: 0;
+      color: $clr1;
+      text-decoration: underline;
+      align-self: flex-end;
+    }
+  }
+  .facilities {
+    li {
+      padding-block-start: em(8px, 15px);
+      span {
+        font-size: em(15px);
+        color: $clr5;
+      }
+      .icon-container{
+        margin-inline-end: em(12px);
+        svg{
+          fill: $clr1
+        }
+      }
+    }
+    button{
+      margin-top: em(22px);
+      padding-block: em(8px);
+      color: $secondary-clr9;
+      background-color: transparent;
+      border-radius: em(4px);
+      border: 1px solid $secondary-clr2;
+    }
+  }
+  .opening-hours {
+    font-size: rem(15px);
+    ul {
+      li {
+        > :first-child {
+          color: $clr5;
+          text-transform: capitalize;
+        }
+        padding-block-start: em(8px, 15px);
+        .hours {
+          color: $clr3;
+        }
+      }
+    }
+  }
+  .contact {
+    font-size: rem(15px);
+    > div {
+      color: $clr5;
+      display: flex;
+      gap: em(13px, 15px);
+      padding-block-start: em(9px, 15px);
+      &:first-of-type {
+        svg {
+          stroke: $clr5;
+        }
+      }
+      svg {
+        width: em(16px, 15px);
+        height: em(16px, 15px);
+        fill: $clr5;
+      }
+    }
+  }
+  .map {
+    h2 {
+      padding-block-end: em(10px);
+    }
+    p {
+      color: $clr1;
+    }
+    .map-container {
+      height: em(128px);
+      border-radius: em(8px);
+      overflow: hidden;
+    }
+  }
+}

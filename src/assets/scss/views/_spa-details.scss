@@ -1,0 +1,158 @@
+.spa-details {
+  .spa-header {
+    button {
+      width: rem(30px);
+      height: rem(30px);
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .main-content-container {
+      height: rem(468px);
+      .buttons-container {
+        padding-block-start: em(40px);
+        flex: 82.5%;
+        svg {
+          width: em(20px, 13.33px);
+          height: em(20px, 13.33px);
+        }
+        img {
+          width: em(23px, 13.33px);
+          height: em(24px, 13.33px);
+        }
+      }
+      .contact-buttons {
+        align-items: flex-start;
+        gap: em(10px);
+        svg {
+          width: em(14px, 13.33px);
+          height: em(16px, 13.33px);
+          // width: 14px;
+          // height: 16px;
+        }
+      }
+      .info {
+        flex: 17.5%;
+        color: $clr8;
+        .spa-info {
+          h1 {
+            margin-top: 0;
+          }
+        }
+        .content-container {
+          gap: rem(20px);
+          align-items: flex-end;
+          .rating {
+            gap: 5px;
+            font-size: em(15px);
+            svg {
+              fill: $secondary-clr3;
+              width: em(16.67px, 15px);
+              height: em(15.8px, 15px);
+            }
+          }
+          .buttons {
+            gap: em(10px);
+            svg:first-of-type {
+              width: em(13.61px, 13.33px);
+              height: em(13.22px, 13.33px);
+            }
+            svg:last-of-type {
+              width: em(13.25px, 13.33px);
+              height: em(12.12px, 13.33px);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .carousel-container {
+    position: absolute;
+    z-index: -10;
+    width: 100%;
+    overflow: hidden;
+    .slick-slide {
+      width: 100% !important;
+      padding-inline-end: 0;
+    }
+    .slick-list {
+      img {
+        height: rem(468px);
+        object-fit: cover;
+      }
+    }
+    ul {
+      &.slick-dots {
+        bottom: em(25px);
+        > li {
+          margin: 0;
+          padding: 0;
+          width: em(10px);
+          height: em(15px);
+
+          button {
+            padding: 0;
+            margin: 0;
+            width: 0;
+            height: 0;
+            &::before {
+              color: $clr6;
+              opacity: 1;
+              width: 0;
+              height: 0;
+              transition: font-size 0, 8s;
+            }
+          }
+
+          &.slick-active {
+            button::before {
+              color: $secondary-clr2;
+              font-size: rem(9px);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    ul {
+      li {
+        background-color: $clr6;
+        color: $clr5;
+        padding-block: em(8px);
+        &:has(a.active) {
+          background-color: $clr1;
+          color: $clr8;
+          border-radius: em(3px);
+          &:first-of-type {
+            border-radius: 0 em(3px) em(3px) 0;
+          }
+          &:last-of-type {
+            border-radius: em(3px) 0 0 em(3px);
+          }
+        }
+        a {
+          cursor: pointer;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &:hover:not(.active) {
+            // text-decoration: underline;
+            font-weight: bold;
+            color: $clr3;
+          }
+          &:hover.active {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}

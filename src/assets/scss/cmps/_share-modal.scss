@@ -1,0 +1,47 @@
+.share-modal {
+  position: fixed;
+  z-index: 20;
+  bottom: 50%;
+  left: 50%;
+  background-color: $clr7;
+  border-radius: rem(11px);
+  grid-template-rows: auto 1fr auto;
+  padding: em(16px);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.6s, opacity 0.6s;
+  &.open {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .close-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-block-end: em(18px);
+    button {
+      transition: box-shadow 0.2s;
+      &:hover {
+        box-shadow: $bx-shadow1;
+      }
+      border-radius: em(7px, 12px);
+      border: 0;
+      background-color: $clr8;
+      padding: em(8px, 12px);
+      height: em(26px, 12px);
+      svg {
+        width: em(10px, 12px);
+        height: em(10px, 12px);
+      }
+    }
+  }
+
+  h2{
+    line-height: 1em;
+    text-align: center;
+    font-size: em(32px);
+    margin-bottom: em(16px);
+  }
+}

@@ -1,0 +1,40 @@
+.burger-menu {
+  position: absolute;
+  top: 2.2em;
+  left: 0;
+  transform: translateY(-10%);
+  pointer-events: none;
+  opacity: 0;
+  z-index: 20;
+  min-width: em(70px);
+  flex-direction: column;
+  color: black;
+  background-color: $clr7;
+  border-radius: $border-radius;
+  overflow: hidden;
+  transition: transform 0.8s ease, opacity 0.1s ease;
+
+  button,
+  a {
+    font-size: em(12px);
+    padding: 0;
+    border: none;
+    padding: em(12px);
+    pointer-events: auto !important;
+    text-align: center;
+
+    &:hover {
+      font-weight: bold;
+    }
+  }
+}
+.open {
+  transform: translateX(0);
+  opacity: 1;
+
+  button.active,
+  a.active {
+    background-color: $clr1;
+    color: $clr8;
+  }
+}

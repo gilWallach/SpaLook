@@ -1,0 +1,56 @@
+.container {
+    max-width: $normal-breakpoint;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding: 20px;
+
+
+    // @include for-mobile-layout {
+    //     max-width: initial;
+    // }
+
+    // @include for-tablet-layout {
+    //     max-width: $mobile-breakpoint;
+    // }
+
+    // @include for-normal-layout {
+    //     max-width: $tablet-breakpoint;
+    // }
+
+    // @include for-wide-layout {
+    //     max-width: $normal-breakpoint;
+    // }
+}
+
+// GRIDS
+.simple-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-gap: 30px;
+}
+
+.main-layout {
+    display: grid;
+    grid-template-columns: $layout-padding 1fr $layout-padding;
+    // @include layoutGTC($mobile-breakpoint);
+    > * {
+      grid-column: 2;
+  
+      &.full {
+        grid-column: 1/-1;
+      }
+    }
+
+    @include for-narrow-layout {
+        @include layoutGTC($tablet-breakpoint)
+    }
+
+    @include for-normal-layout {
+        @include layoutGTC($normal-breakpoint)
+    }
+
+    @include for-wide-layout {
+        @include layoutGTC($wide-breakpoint)
+    }
+  }

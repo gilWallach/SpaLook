@@ -1,0 +1,9 @@
+.label-edit{
+    .label-page-inputs{
+        display: flex;
+        flex-direction: column;
+        @include for-narrow-layout{
+            flex-direction: row;
+        }
+    }
+}

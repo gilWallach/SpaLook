@@ -1,0 +1,25 @@
+.admin-label-list {
+  h3 {
+    font-weight: bold;
+
+    span {
+      display: inline-block;
+      font-weight: normal;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      max-width: 100px;
+    }
+  }
+
+  h4 {
+    margin-inline-start: em(32px);
+  }
+
+  .label-preview {
+    gap: em(16px);
+    background-color: $clr8;
+    padding: em(8px);
+    border-radius: $border-radius;
+  }
+}

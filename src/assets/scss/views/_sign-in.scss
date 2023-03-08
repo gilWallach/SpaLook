@@ -1,0 +1,21 @@
+.sign-in {
+  h3 {
+    margin-top: em(12px);
+  }
+  p {
+    font-size: em(16px);
+    color: $secondary-clr9;
+    margin-top: em(16px);
+  }
+
+  input {
+    margin-top: em(8px);
+    border: 1px solid $secondary-clr8;
+    border-radius: $border-radius;
+    padding: em(8px);
+}
+.submit-btn-container{
+    margin-top: em(16px);
+    text-align: center;
+}
+}

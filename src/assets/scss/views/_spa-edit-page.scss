@@ -1,0 +1,19 @@
+.spa-edit {
+  .img-container {
+    position: relative;
+    button {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+  .edit-container {
+    @include for-narrow-layout {
+      flex-direction: row;
+    }
+  }
+
+  .css-q8hpuo-MuiFormControl-root{
+    margin-top: em(15px);
+  }
+}

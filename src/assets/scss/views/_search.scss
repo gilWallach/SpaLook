@@ -1,0 +1,85 @@
+.search {
+  overflow: hidden;
+  position: relative;
+  margin-top: em(20px);
+  .title{
+    h2 {
+      display: inline;
+      // padding-block: em(4px);
+      padding-inline-end: em(4px);
+      width: fit-content;
+    }
+  }
+  .spa-list .h2 {
+    margin-top: 0;
+  }
+  p {
+    margin-top: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 14ch;
+  }
+
+  .facilities {
+    gap: em(5px);
+    margin-top: em(8px);
+
+    .MuiButtonBase-root {
+      border-radius: $border-radius;
+      height: fit-content;
+      color: $clr5;
+      background-color: $clr6;
+      margin-block-start: em(12px) !important;
+    }
+
+    .css-1q79v3g-MuiButtonBase-root-MuiChip-root .MuiChip-deleteIcon {
+      -webkit-tap-highlight-color: $clr5 !important;
+      // color: transparent !important;
+      width: em(12px) !important;
+      font-size: 1em;
+    }
+  }
+
+  .sortBy-results-container {
+    position: relative;
+    margin-block-start: em(4px);
+    color: $clr5;
+    &:has(.open) {
+      background-color: $secondary-clr7;
+    }
+
+    ul {
+      color: $clr3;
+      width: 100vw;
+      li {
+        margin-top: em(12px);
+      }
+    }
+    .sortBy {
+      border: none;
+      color: $clr5;
+      background-color: transparent;
+    }
+  }
+
+  .map-btn {
+    position: sticky;
+    bottom: 0;
+    width: em(112px);
+    height: em(34px);
+    left: 50%;
+    transform: translateX(-50%);
+    gap: em(12px);
+    background-color: $clr3;
+    color: $clr8;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border-radius: $border-radius;
+    border: none;
+
+    svg {
+      fill: $clr3;
+      stroke: $clr8;
+    }
+  }
+}

@@ -1,0 +1,83 @@
+.spa-details-reviews {
+  margin-block: em(15px);
+  border-radius: em(8px);
+  background-color: $clr8;
+  padding: em(15px);
+
+  .header-container {
+    .content-container {
+      h2 {
+        margin: 0;
+        color: $clr3;
+      }
+      h3 {
+        color: transparentize($color: $clr3, $amount: 0.3);
+        font-size: em(14px);
+        line-height: em(13px,14px);
+        > :first-child {
+          border-inline-end: 1px solid $clr5;
+          padding-inline-end: em(4px, 14px);
+          align-self: flex-end;
+        }
+        > :last-child {
+          padding-inline-start: em(4px, 14px);
+          align-items: flex-end;
+          svg {
+            padding-inline-end: em(3px,14px);
+            width: em(19px, 14px);
+            height: em(19px, 14px);
+            fill: $secondary-clr3;
+          }
+        }
+      }
+    }
+    .img-container {
+      width: em(47px);
+    }
+  }
+  .review-list {
+    .review-item {
+      padding-block: em(18px);
+      &:not(:first-of-type) {
+        border-top: 1px solid $clr6;
+      }
+      h3 {
+        color: $clr3;
+        margin-bottom: em(3px);
+        margin-top: 0;
+      }
+      .stars {
+        li{
+            padding-inline-start: em(1px);
+            svg {
+                fill: transparentize($color: $secondary-clr3, $amount: 0.75);
+                width: em(17px);
+                height: em(17px);
+            }
+            &.filled{
+              svg {
+                  fill: $secondary-clr3;
+                }
+            }
+        }
+      }
+      .date {
+        color: darken($color: $secondary-clr2, $amount: 0.2);
+        font-size: em(11px);
+      }
+      p {
+        color: $clr3;
+      }
+    }
+  }
+  .btn-container{
+    button{
+        background-color: transparent;
+        color: darken($color: $clr5, $amount: 20%);
+        border: 1px solid $clr5;
+        font-size: rem(14px);
+        border-radius: em(4px,14px);
+        padding-block: em(8px,14px);
+    }
+  }
+}

@@ -1,0 +1,10 @@
+// REM Functions
+@function rem($size) {
+    $remSize: $size / 12px;
+    @return ($remSize) * 1rem;
+}
+
+// EM Functions
+@function em($pixels, $context: 12px) {
+    @return ($pixels/$context) * 1em;
+}

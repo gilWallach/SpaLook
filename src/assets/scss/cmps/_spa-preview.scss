@@ -1,0 +1,99 @@
+// homepage display
+.carousel-list {
+  margin-block-start: rem(18px);
+
+  li {
+    cursor: pointer;
+  }
+
+  h4 {
+    span {
+      font-size: em(14px);
+      margin-inline-start: em(5px);
+    }
+  }
+  p {
+    font-size: em(14px);
+  }
+
+  .city-rating-container {
+    color: $clr5;
+    gap: em(5px);
+
+    div {
+      gap: em(6px);
+    }
+  }
+}
+
+.spa-preview-container {
+  .img-container {
+    position: relative;
+  }
+  .rating {
+    position: absolute;
+    bottom: em(5px);
+    left: em(7px);
+    gap: 5px;
+    font-size: em(12px);
+    padding: em(5px) em(8px);
+    border-radius: em(12px);
+    color: $clr8;
+    background-color: $clr1;
+    svg {
+      fill: $clr8;
+      width: em(10px);
+      height: em(10px);
+    }
+  }
+  h3 {
+    color: $clr4;
+  }
+  h4 {
+    color: $clr1;
+  }
+}
+// cards display
+.spa-card {
+  gap: em(10px);
+  margin-top: em(14px);
+  padding: em(5px);
+  background-color: $clr8;
+  border-radius: $border-radius;
+  cursor: pointer;
+  &:first-of-type {
+    margin-top: 0;
+  }
+
+  .img-container {
+    width: em(116px) !important;
+    height: em(98px) !important;
+  }
+
+  .preview-content {
+    width: 60%;
+    .city-rating-container {
+      margin-top: em(9px);
+
+      h4 {
+        font-size: em(12px);
+        margin-top: em(12px);
+      }
+      .rating {
+        margin-inline-end: em(36px);
+      }
+      svg {
+        fill: $secondary-clr3;
+        height: em(16px);
+      }
+    }
+    h3 {
+      margin: 0;
+      font-family: Inter-Regular;
+    }
+    h4 {
+      margin-top: em(8px);
+      color: $clr1;
+    }
+  }
+}

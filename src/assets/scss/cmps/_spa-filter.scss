@@ -1,0 +1,158 @@
+.filter {
+  overflow-x: hidden;
+  font-family: "Inter-Regular";
+  form {
+    gap: em(12px);
+    color: $clr3;
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: em(11px, 20px);
+    }
+    > * {
+      background-color: $clr8;
+      padding: em(17px) em(11px);
+      border-radius: em(6px);
+      box-shadow: $bx-shadow2;
+    }
+    .where {
+      gap: em(12px);
+      .css-bvz20t {
+        width: 100%;
+      }
+      .css-gcwvw8-MuiAutocomplete-root
+        .MuiOutlinedInput-root
+        .MuiAutocomplete-input {
+        color: $clr5;
+      }
+    }
+    .when {
+      color: $clr5;
+      font-size: em(16px);
+      padding: em(13px);
+      button {
+        background-color: transparent;
+        border: 0;
+        color: $clr1;
+      }
+      .date-picker {
+        font-family: "Inter-Regular";
+        label {
+          color: $clr1;
+        }
+        fieldset {
+          border: 0;
+
+          // legend {
+          //   display: none;
+          // }
+        }
+        // input {
+        //   padding: 0;
+        // }
+      }
+    }
+    .spa-list {
+      padding-block: 4px;
+    }
+    .spa-list.carousel-list,
+    .spa-list .carousel-list {
+      li {
+        .img-container {
+          width: em(130px) !important;
+          height: em(117px) !important;
+          border-radius: $border-radius;
+          overflow: hidden;
+          &.location img {
+            filter: grayscale(1);
+          }
+          &.location:hover {
+            box-shadow: $bx-shadow1;
+            img {
+              filter: grayscale(0);
+            }
+          }
+        }
+        .homepage > .img-container.location {
+          width: 100% !important;
+          height: 100% !important;
+        }
+        &:hover img {
+          filter: grayscale(0) drop-shadow(0px 6px 10px rgba(0, 0, 0, 0.3));
+          box-shadow: $bx-shadow1;
+        }
+        img {
+          object-fit: cover;
+          transition: grayScale 0.6s;
+        }
+        h4 {
+          font-size: 16px;
+          text-align: left;
+          color: $clr3;
+        }
+      }
+    }
+  }
+}
+
+.css-gcwvw8-MuiAutocomplete-root {
+  width: 100% !important;
+  height: 100% !important;
+}
+.autocomplete-li {
+  background-color: #000 !important;
+}
+.MuiAutocomplete-popper {
+  display: block !important;
+  height: 100% !important;
+  > * {
+    height: 100% !important;
+    background-color: $clr8 !important;
+  }
+  .autocomplete-item {
+    gap: 20px;
+    color: $clr3;
+    background-color: transparent;
+    font-size: em(14px);
+    div:first-child {
+      background-color: $clr7;
+      fill: $clr1;
+      border-radius: em(2.63px);
+      width: em(45px);
+      height: em(45px);
+    }
+  }
+  .css-esv6et-MuiListSubheader-root-MuiAutocomplete-groupLabel {
+    color: $clr3;
+    font-size: em(16px);
+  }
+}
+
+.MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon.css-gcwvw8-MuiAutocomplete-root
+  .MuiOutlinedInput-root {
+  color: $clr5;
+  svg {
+    fill: $clr5;
+  }
+  &:has(input[aria-controls="txt-listbox"]) {
+    background-color: $clr7;
+    color: $clr3;
+    svg {
+      fill: $clr3;
+    }
+    outline: 0;
+  }
+  .MuiAutocomplete-endAdornment.css-1q60rmi-MuiAutocomplete-endAdornment {
+    background-color: inherit;
+  }
+  &:hover {
+    .MuiOutlinedInput-notchedOutline {
+      border-color: $clr3;
+    }
+  }
+}
+
+.css-1gywuxd-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused
+  .MuiOutlinedInput-notchedOutline {
+  border: 0;
+}

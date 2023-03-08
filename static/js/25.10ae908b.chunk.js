@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkspa_look_app=self.webpackChunkspa_look_app||[]).push([[25],{7025:function(p,a,e){p.exports=e.p+"static/media/Marker.987d79a2c6f3de7e8b38.svg"}}]);

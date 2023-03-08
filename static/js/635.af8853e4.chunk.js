@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkspa_look_app=self.webpackChunkspa_look_app||[]).push([[635],{5635:function(p,s,a){p.exports=a.p+"static/media/Relax.4338b19905e5df687cd5.svg"}}]);

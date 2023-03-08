@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkspa_look_app=self.webpackChunkspa_look_app||[]).push([[868],{1868:function(p,s,a){p.exports=a.p+"static/media/Logo.58332c4181081bf965ec.svg"}}]);

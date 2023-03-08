@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkspa_look_app=self.webpackChunkspa_look_app||[]).push([[68],{9068:function(a,s,p){a.exports=p.p+"static/media/FootMassage.b3dc4a352a55a6b4ac34.svg"}}]);

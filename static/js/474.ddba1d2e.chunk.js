@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkspa_look_app=self.webpackChunkspa_look_app||[]).push([[474],{5474:function(a,p,s){a.exports=s.p+"static/media/FacialMask.568ca7b85d368c15c978.svg"}}]);

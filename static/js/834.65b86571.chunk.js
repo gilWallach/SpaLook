@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkspa_look_app=self.webpackChunkspa_look_app||[]).push([[834],{8834:function(p,e,s){p.exports=s.p+"static/media/Group.8beea779c9e333c94b91.svg"}}]);

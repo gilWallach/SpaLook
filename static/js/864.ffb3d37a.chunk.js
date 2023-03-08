@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkspa_look_app=self.webpackChunkspa_look_app||[]).push([[864],{3864:function(a,p,s){a.exports=s.p+"static/media/Double.abaa4568766f25112948.svg"}}]);

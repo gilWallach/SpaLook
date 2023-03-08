@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkspa_look_app=self.webpackChunkspa_look_app||[]).push([[88],{9088:function(p,s,a){p.exports=a.p+"static/media/Search.57c2129d03b0c96b9524.svg"}}]);

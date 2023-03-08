@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkspa_look_app=self.webpackChunkspa_look_app||[]).push([[244],{4098:function(p,a,s){p.exports=s.p+"static/media/Map.8ab1b3228ce8f01e5cf8.svg"}}]);

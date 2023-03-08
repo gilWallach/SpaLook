@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkspa_look_app=self.webpackChunkspa_look_app||[]).push([[927],{4927:function(a,p,e){a.exports=e.p+"static/media/Share.51843e2add6d659ea1ad.svg"}}]);

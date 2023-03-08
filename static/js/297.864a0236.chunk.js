@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkspa_look_app=self.webpackChunkspa_look_app||[]).push([[297],{2297:function(p,e,s){p.exports=s.p+"static/media/Delete.958c6adf278d94d32066.svg"}}]);

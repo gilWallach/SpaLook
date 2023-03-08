@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkspa_look_app=self.webpackChunkspa_look_app||[]).push([[94],{9094:function(c,a,p){c.exports=p.p+"static/media/Checkmark.5ca918cdc715ab162ccc.svg"}}]);

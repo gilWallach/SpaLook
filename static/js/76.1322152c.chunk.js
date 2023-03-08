@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkspa_look_app=self.webpackChunkspa_look_app||[]).push([[76],{6076:function(p,a,s){p.exports=s.p+"static/media/World.341a4c39f9f476a5492f.svg"}}]);

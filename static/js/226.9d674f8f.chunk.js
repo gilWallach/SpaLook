@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkspa_look_app=self.webpackChunkspa_look_app||[]).push([[226],{4226:function(p,e,s){p.exports=s.p+"static/media/Phone.530485e71ecc3a30372c.svg"}}]);

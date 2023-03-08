@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkspa_look_app=self.webpackChunkspa_look_app||[]).push([[342],{1342:function(p,a,s){p.exports=s.p+"static/media/LeftArrow.8dc59483f66ba41d728a.svg"}}]);

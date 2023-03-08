@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkspa_look_app=self.webpackChunkspa_look_app||[]).push([[576],{5576:function(a,p,s){a.exports=s.p+"static/media/Star.d879aa56e14f3d0fe6b9.svg"}}]);
